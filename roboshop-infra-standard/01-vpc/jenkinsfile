@@ -6,6 +6,8 @@ pipeline {
         stage('init') {
             steps {
                 sh'''
+                    ls -ltr
+                    pwd
                     terraform plan
                 '''    
             }
@@ -13,6 +15,8 @@ pipeline {
         stage('plan') {
             steps {
                 sh'''
+                    ls -ltr
+                    pwd
                     terraform plan
                 '''    
             }
